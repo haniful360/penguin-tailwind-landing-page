@@ -10,21 +10,36 @@
 
     <!-- font awesome kit -->
     <script src="https://kit.fontawesome.com/201614f162.js" crossorigin="anonymous"></script>
+
+    <!-- customize -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                price: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
 </head>
 
 <body>
     <header class='bg-[#FFFBF0] pb-24 pt-10'>
-        <div class=" mx-auto flex justify-center items-center gap-6">
+        <div class=" container mx-auto grid sm:grid-cols-1 lg:grid-cols-2  justify-between items-center ">
             <div class="space-y-5">
-                <h1 class="text-7xl">Be the Penguins <span class="text-[#FABE4C]">of Winter</span></h1>
+                <h1 class="text-7xl font-semibold uppercase"> <span class="text-[#FABE4C]">Be the Penguins</span></h1>
+                <h1 class="text-7xl font-semibold uppercase">of winter</h1>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, fugit!</p>
                 <button class="uppercase bg-gradient-to-r text-white from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg">
                     <span class="w-6 h-6"><i class="fa-solid fa-cart-shopping"></i></span>
                     buy now
                 </button>
             </div>
-            <div>
-                <img src="./images/model.png" alt="">
+            <div class=" ">
+                <img class="w-3/4 mx-auto" src="./images/model.png" alt="">
             </div>
         </div>
     </header>
