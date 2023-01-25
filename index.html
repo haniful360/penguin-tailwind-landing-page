@@ -6,6 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penguin</title>
+
+    <!-- daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.47.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- font awesome kit -->
@@ -27,22 +30,58 @@
 </head>
 
 <body>
-    <header class='bg-[#FFFBF0] pb-24 pt-10 px-4'>
-        <div class=" container mx-auto grid sm:grid-cols-1 lg:grid-cols-2  justify-between items-center ">
-            <div class="space-y-5">
-                <h1 class="text-6xl font-semibold uppercase"> <span class="text-[#FABE4C]">Be the Penguin</span></h1>
-                <h1 class="text-6xl font-semibold uppercase">of winter</h1>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, fugit!</p>
-                <button class="uppercase bg-gradient-to-r text-white from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg">
-                    <span class="w-6 h-6"><i class="fa-solid fa-cart-shopping"></i></span>
-                    buy now
-                </button>
+    <!-- header section -->
+    <header class="bg-[#FFFBF0]">
+        <div class="navbar w-10/12 mx-auto">
+            <div class="navbar-start w-full">
+                <div class="dropdown">
+                    <label tabindex="0" class="btn btn-ghost lg:hidden">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </label>
+                    <ul tabindex="0"
+                        class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Contact Us</a></li>
+                        <li><a>Subscribe</a></li>
+                    </ul>
+                </div>
+                <a class="ml-auto lg:ml-0 block normal-case text-2xl bg-gradient-to-r from-[#A4BC46] to-green-400 text-transparent bg-clip-text font-bold">Convention Center</a>
             </div>
-            <div class=" ">
-                <img class="w-3/4 mx-auto" src="./images/model.png" alt="">
+            <div class="navbar-center mx-auto hidden lg:flex">
+                <ul class="menu menu-horizontal px-1">
+                    <li><a>Home</a></li>
+                    <li><a>About</a></li>
+                    <li><a>Contact Us</a></li>
+                    <li><a>Subscribe</a></li>
+                </ul>
             </div>
         </div>
+        <!-- banner section -->
+        <section class='bg-[#FFFBF0] pb-24 pt-10 px-4'>
+            <div class=" container mx-auto grid sm:grid-cols-1 lg:grid-cols-2  justify-between items-center ">
+                <div class="space-y-5">
+                    <h1 class="text-6xl font-semibold uppercase"> <span class="text-[#FABE4C]">Be the Penguin</span>
+                    </h1>
+                    <h1 class="text-6xl font-semibold uppercase">of winter</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem, fugit!</p>
+                    <button
+                        class="uppercase bg-gradient-to-r text-white from-[#A4BC46] to-[#85A019] py-4 px-8 rounded-lg">
+                        <span class="w-6 h-6"><i class="fa-solid fa-cart-shopping"></i></span>
+                        buy now
+                    </button>
+                </div>
+                <div class=" ">
+                    <img class="w-3/4 mx-auto" src="./images/model.png" alt="">
+                </div>
+            </div>
+        </section>
     </header>
+
     <!-- main section -->
     <main class="container mx-auto">
         <!-- woman jacket section  -->
@@ -202,8 +241,8 @@
                 <img class="w-3/4 mx-auto" src="./images/shopping.png" alt="">
             </div>
         </div>
-    </footer>
 
+    </footer>
 </body>
 
 </html>
